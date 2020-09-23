@@ -4,12 +4,14 @@ Now imagine the person fills in a new event in the calendar app and presses save
 
 List the order in which those 4 technologies will be engaged at the moment the user clicks save.
 
-1.
-2.
-3.
-4.
+1. GraphQ1  
+2. Angular
+3. Node
+4. MySQL
 
 Feel free to write any additional thoughts or caveats here:
 
+GraphQ1 is the API, angular is the front end language, node serves as the back end language and MySQL is the database so the engagement of the technologies would go from highest 
+to deepest which is how I came to the order I did.
 
 

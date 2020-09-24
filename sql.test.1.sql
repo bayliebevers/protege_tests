@@ -2,5 +2,5 @@
 
 SELECT customers.name, SUM(purchases.product_id)
 FROM customers, purchases
-JOIN customers ON customers.id=purchases.customer_id 
+JOIN customers.name ON customers.id=purchases.customer_id 
 

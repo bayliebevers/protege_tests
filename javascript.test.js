@@ -8,8 +8,12 @@
  */
 
 
-function calculateClockAngle(hours, minutes) {
-
+function calculateClockAngle(hours, minutes) {// only using a 12 hour clock notation
+  var MinuteHand = 0.5 * minutes,
+      HourHand = 30 * hours,
+      MinuteHandAngle = 6 * minutes,
+      CalculateAngle = Math.abs(MinuteHand + HourHand - MinuteHandAngle);
+      
 }
 
 
@@ -18,3 +22,9 @@ console.log(calculateClockAngle(1, 15))
 console.log(calculateClockAngle(3, 37))
 console.log(calculateClockAngle(12, 0))
 console.log(calculateClockAngle(8, 8))
+
+
+//NOTES
+// -  For the minute hand, using 360 degrees as the entirety of the circle, each minute would rotate the hand by 6 degrees
+// - using the Math.abs () function will actually calucate the angle of the hand
+// - since we assume the hour hand moves continuously, the minute hand angle is what is calculated

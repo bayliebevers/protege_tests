@@ -3,4 +3,4 @@
 
 SELECT products.name, SUM(purchases.product_id)
 FROM products, purchases
-JOIN products ON products.id=purchases.product_id
+JOIN products.name ON products.id=purchases.product_id
